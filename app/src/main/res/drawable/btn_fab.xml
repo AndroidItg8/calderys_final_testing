@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="2dip" android:color="#2bfa8f51"/>
+            <padding
+                android:left="2dip"
+                android:right="2dip"
+                android:top="2dip"
+                android:bottom="2dip"
+                />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="2dip" android:color="#affa8f51"/>
+            <padding
+                android:left="2dip"
+                android:right="2dip"
+                android:top="2dip"
+                android:bottom="2dip"
+                />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="2dip" android:color="#FFFA8F51"/>
+            <padding
+                android:left="1dip"
+                android:right="1dip"
+                android:top="1dip"
+                android:bottom="1dip"
+                />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_folder" android:left="2dp"
+        android:top="2dp" android:right="2dp" android:bottom="2dp"/>
+</layer-list>

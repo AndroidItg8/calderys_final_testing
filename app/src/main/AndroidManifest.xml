@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.itg.calderysapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".common.MyApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldConnect.update.AddActivity"
+            android:label="@string/title_activity_add"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".caldConnect.pds.PDSActivity"
+            android:label="@string/title_activity_pds"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".common.FileDownloadService"
+            android:exported="true" />
+
+        <!-- &lt;!&ndash; Set custom default icon. This is used when no icon is set for incoming notification messages. -->
+        <!-- See README(https://goo.gl/l4GJaQ) for more. &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_icon" -->
+        <!-- android:resource="@" /> -->
+        <!-- &lt;!&ndash; Set color used with incoming notification messages. This is used when no color is set for the incoming -->
+        <!-- notification message. See README(https://goo.gl/6BKBk7) for more. &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_color" -->
+        <!-- android:resource="@color/colorAccent" /> -->
+        <!--  -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.itg.calderysapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".caldConnect.gallery.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldConnect.gallery.GalleryDetailsActivity"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.createIntent.CreateIntentActivity"
+            android:label="@string/title_activity_create_intent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.intent.fragment.IntentBaseActivity"
+            android:label="@string/title_activity_intent_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.consignee.ConsingeeAddActivity"
+            android:label="@string/title_activity_consingee_add"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".caldNet.newIndent.setting.AddSetting"
+            android:label="@string/title_activity_add_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.addmaterial.MaterailAddActivity"
+            android:label="@string/title_activity_materail_add"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.Deetails.ViewDetailsActivity"
+            android:label="@string/title_activity_view_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.createIntent.CreateIndentNewActivity"
+            android:label="@string/title_activity_create_indent_new"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.consignee.ConsigneeListActivity"
+            android:label="@string/title_activity_consignee_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.addmaterial.TransportListActivity"
+            android:label="@string/title_activity_transport_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".caldNet.newIndent.addmaterial.ProductListActivity"
+            android:label="@string/title_activity_product_list"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".caldNet.newIndent.Deetails.ProductDetailsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

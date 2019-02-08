@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16">
+
+        <TableLayout
+            android:id="@+id/simpleTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cust_txt"
+            android:padding="@dimen/margin_8"
+            android:stretchColumns="1">
+            <!-- stretch the second column of the layout-->
+
+            <!-- first row of the table layout-->
+
+            <TableRow
+
+                android:id="@+id/tbl_row_product"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/lbl_product_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+
+                    android:padding="@dimen/margin_8"
+                    android:text="Intent Code"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_product_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+
+                    android:text="1000000070-1308-0001"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </TableRow>
+
+
+            <TableRow
+
+                android:id="@+id/tbl_row_invoice_number"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_invoice_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"                    
+                    android:text="Invoice code"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_invoice_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="Approved "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/tbl_row_invoice_amt"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lbl_invoic_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+
+                    android:padding="@dimen/margin_8"
+                    android:text="Invoice Amount "
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_invoice_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="4410010849"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_so_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="SO Number"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_so_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+
+                    android:fontFamily="@font/open_sans"
+
+                    android:gravity="left"
+
+                    android:padding="@dimen/margin_8"
+                    android:text="SO Number"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lbl_po_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+
+
+
+                    android:text="Po Number"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_po_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="Po Number"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_transport_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_below="@+id/lbl_po_number"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="@dimen/margin_8"
+
+
+                    android:gravity="left"
+                    android:text="Transport Name"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_transport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+
+                    android:maxLines="1"
+                    android:padding="@dimen/margin_8"
+                    android:text="Transport Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_truck_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="@dimen/margin_8"
+
+                    android:gravity="left"
+                    android:text="Truck No"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_track_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="Track No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lbl_lr_detais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:text="LR Details"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:padding="@dimen/margin_8"
+
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_lr_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="Yes"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_dispached_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+
+                    android:text="Dispatched Qty"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/txt_so_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+
+
+
+                    android:gravity="left"
+
+                    android:padding="@dimen/margin_8"
+                    android:text="123"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_So_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="@dimen/margin_8"
+                    android:gravity="left"
+                    android:text="Balance Quantity"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/txt_dispach_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="123Kh"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_balance_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="left"
+                    android:padding="@dimen/margin_8"
+                    android:text="So Quantity"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/txt_balance_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+
+                    android:gravity="left"
+
+
+                    android:padding="@dimen/margin_8"
+                    android:text="124566ljh"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </TableRow>
+        </TableLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/txt_lr_details"-->
+        <!--android:layout_margin="@dimen/margin_8"-->
+        <!--android:background="@drawable/cust_txt"-->
+        <!--android:weightSum="3">-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/margin_8"-->
+
+        <!--android:layout_weight="1">-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<View android:layout_width="1px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/margin_8"-->
+        <!--android:background="@color/colorGrayLight"/>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/margin_8"-->
+        <!--android:layout_weight="1">-->
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

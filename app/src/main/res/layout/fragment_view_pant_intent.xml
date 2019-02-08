@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestedScrolling"
+    tools:context=".caldNet.newIndent.intent.fragment.ApproveIntentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/ll_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:textColor="@color/colorGray"
+                android:textStyle="normal"
+                android:textSize="@dimen/txt_14"
+                android:fontFamily="@font/open_sans"
+
+                android:text="Plant Name :"
+                android:id="@+id/lbl_plant_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:textColor="@color/colorBlack"
+                android:textStyle="normal"
+                android:textSize="@dimen/txt_14"
+                android:text="Plant Name"
+                android:inputType="text"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:id="@+id/txt_plant_name"
+                android:layout_toEndOf="@+id/lbl_plant_name"
+                android:layout_toRightOf="@+id/lbl_plant_name" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_plant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_plant_name"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+
+                android:padding="@dimen/margin_8"
+                android:textColorHint="@color/colorGrayLight"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edtPlantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:hint="Plant  Name"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="@dimen/margin_8"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_plant"
+
+                app:cardCornerRadius="@dimen/margin_4"
+
+
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_plant"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        app:errorEnabled="true"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/margin_8"
+
+                        android:textColorHint="@color/colorGrayLight"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtStartDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="Start Date"
+                            android:inputType="date"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/margin_8"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:layout_weight="1"
+                        android:padding="@dimen/margin_8"
+                        android:textColorHint="@color/colorGrayLight"
+                        app:errorEnabled="true"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtEndDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="End Date"
+                            android:inputType="date"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/margin_8"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_date"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_input">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_input"
+                android:layout_margin="@dimen/margin_16" />
+
+            <RelativeLayout
+                android:id="@+id/rlNoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_no"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_opened_white_box" />
+
+                <TextView
+                    android:id="@+id/txt_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_no"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_4"
+                    android:gravity="center"
+                    android:text="ViewDraft List Not Available"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@+id/recyclerView"-->
+        <!--android:layout_marginBottom="@dimen/margin_16"-->
+        <!--android:background="@drawable/cust_txt"-->
+        <!--android:layout_marginStart="@dimen/margin_16"-->
+        <!--android:layout_marginEnd="@dimen/margin_16"-->
+        <!--android:visibility="gone"-->
+
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/input_layout_send_mail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toStartOf="@+id/img_send"-->
+        <!--android:layout_marginStart="@dimen/margin_16"-->
+        <!--android:layout_marginEnd="@dimen/margin_16"-->
+
+        <!--android:padding="@dimen/margin_8"-->
+        <!--android:textColorHint="@color/colorGrayLight"-->
+        <!--android:visibility="visible">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+        <!--android:id="@+id/edt_send_mail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ellipsize="end"-->
+        <!--android:fontFamily="@font/open_sans"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:hint="CC Email Id"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:lines="1"-->
+        <!--android:maxLines="1"-->
+        <!--android:padding="@dimen/margin_8"-->
+        <!--android:scrollHorizontally="true"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:textColorHint="@color/colorGray"-->
+        <!--android:textSize="@dimen/_14sdp" />-->
+
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_send"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--app:srcCompat="@drawable/ic_send_black_24dp"-->
+        <!--android:padding="@dimen/margin_8"-->
+        <!--android:fontFamily="@font/open_sans"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignBaseline="@+id/input_layout_send_mail"-->
+        <!--android:layout_marginEnd="@dimen/margin_16"-->
+
+        <!--/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="Select"/>
+  <ListItems  Value="ZV11" Text="ED:FULL"/>
+  <ListItems  Value="ZV01" Text="ED:NILL AGAINST BOND/CT1/CT3 BOND"/>
+  <ListItems  Value="ZV02" Text="ED:NILL against SEZ / Exemption"/>
+  <ListItems  Value="ZV03" Text="CST:FULL WITHOUT C FORM"/>
+  <ListItems  Value="ZV04" Text="CST:AGAINST C FORM"/>
+  <ListItems  Value="ZV05" Text="CST:NILL AGAINST FORM H"/>
+  <ListItems  Value="ZV06" Text="CST:NILL for SEZ supply against Form I"/>
+  <ListItems  Value="ZV07" Text="VAT:AS APPLICABLE"/>
+
+  </ListItems>

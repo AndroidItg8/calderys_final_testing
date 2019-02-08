@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="ACC" Text="Standard Spec (ACC)"/>
+  <ListItems  Value="CUS" Text="Customer Spec (CUS)"/>
+</ListItems>

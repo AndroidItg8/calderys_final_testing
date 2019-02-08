@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+		android:id="@+id/txt_date"
+		android:layout_gravity="center"
+		android:textColor="#000"
+		android:textStyle="bold"
+		android:text="20/10/2018"
+		android:layout_marginTop="@dimen/margin_16"
+		android:layout_marginStart="@dimen/margin_16"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_16" />
+	<TextView
+		android:id="@+id/txt_place"
+		android:layout_gravity="center"
+		android:textColor="#9f9e9e"
+		android:textStyle="bold"
+		android:text="Nagpur"
+		android:layout_below="@+id/txt_date"
+		android:layout_marginStart="@dimen/margin_16"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_16" />
+
+	<android.support.v7.widget.RecyclerView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txt_place"
+		android:layout_margin="@dimen/margin_8"
+		android:id="@+id/recysViewInside"/>
+	<!--<ImageView-->
+	<!--android:id="@+id/img"-->
+	<!--android:layout_height="120dp"-->
+	<!--android:layout_marginStart="@dimen/margin_4"-->
+	<!--android:layout_marginEnd="@dimen/margin_4"-->
+	<!--android:layout_marginTop="@dimen/margin_4"-->
+	<!--android:scaleType="centerCrop"-->
+	<!--android:src="@drawable/calderys"-->
+	<!--android:layout_width="150dp" />-->
+
+
+</RelativeLayout>

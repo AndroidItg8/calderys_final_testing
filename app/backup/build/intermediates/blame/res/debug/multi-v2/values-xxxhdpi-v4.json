@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxxhdpi-v4\\values-xxxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "11,3,12,4,2,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "413,97,456,139,57,179,218,257,296,335,374",
+                        "endColumns": "41,40,38,38,38,37,37,37,37,37,37",
+                        "endOffsets": "450,133,490,173,91,212,251,290,329,368,407"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,97,138,177,216,255,293,331,369,407,445",
+                        "endColumns": "41,40,38,38,38,37,37,37,37,37,37",
+                        "endOffsets": "92,133,172,211,250,288,326,364,402,440,478"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    tools:context=".caldNet.newIndent.intent.appoveIntent.ApproveIntentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/ll_input">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@+id/card_dealer"
+                android:id="@+id/rl_intent"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_16"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlack"
+                        android:text="12345667"
+                        android:visibility="gone"
+                        android:id="@+id/txt_intent_code"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/colorGray"
+                        android:layout_below="@+id/txt_intent_code"
+                        android:text=" Select Intent Code"
+                        android:id="@+id/lbl_intent_name"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="Select"
+                        android:id="@+id/img_intent"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/margin_4"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:minWidth="56dp"
+                        android:minHeight="25dp"
+                        app:srcCompat="@drawable/ic_arrow_next"
+                        android:textColor="@color/colorWhite"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="@dimen/margin_4"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/card_dealer"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_16"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorBlack"
+                        android:text="12345678"
+                        android:visibility="gone"
+                        android:id="@+id/txt_delear_code"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/colorGray"
+                        android:id="@+id/lbl_dealer_name"
+                        android:layout_below="@+id/txt_delear_code"
+                        android:text=" Select Dealer Code"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/img_delear"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:minWidth="56dp"
+                        android:minHeight="25dp"
+                        android:padding="@dimen/margin_4"
+                        android:text="Select"
+                        android:textColor="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_arrow_next"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_4" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/card_status"
+                android:layout_below="@+id/rl_intent"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_16"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:id="@+id/spinner_status"
+                        android:inputType="text"
+                        android:padding="10dp"/>
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="@dimen/_14sdp"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:text="12345678"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/txt_status_code"-->
+                        <!--android:fontFamily="@font/open_sans"-->
+                        <!--android:textStyle="bold" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:textColor="@color/colorGray"-->
+                        <!--android:layout_below="@+id/txt_status_code"-->
+                        <!--android:text=" Select Status Code "-->
+                        <!---->
+                        <!--android:fontFamily="@font/open_sans"-->
+                        <!--android:textStyle="normal" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/img_status"-->
+                        <!--android:layout_width="24dp"-->
+                        <!--android:layout_height="24dp"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginEnd="@dimen/margin_4"-->
+                        <!--android:minWidth="56dp"-->
+                        <!--android:minHeight="25dp"-->
+                        <!--android:padding="@dimen/margin_4"-->
+                        <!--android:text="Select"-->
+                        <!--android:textColor="@color/colorWhite"-->
+                        <!--app:srcCompat="@drawable/ic_arrow_next" />-->
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:id="@+id/rl_delear"-->
+
+                <!---->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_layout_delearCode"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toStartOf="@+id/btn_delear"-->
+                <!--android:layout_marginStart="@dimen/margin_16"-->
+                <!--android:layout_marginTop="@dimen/margin_16"-->
+                <!--android:layout_marginEnd="@dimen/margin_16"-->
+                <!--android:padding="@dimen/margin_8"-->
+                <!--android:textColorHint="@color/colorGrayLight"-->
+                <!--android:visibility="visible">-->
+
+                <!--<android.support.design.widget.TextInputEditText-->
+                <!--android:id="@+id/edtDelearCode"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:fontFamily="@font/open_sans"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:hint="Select DelearCode"-->
+                <!--android:inputType="text"-->
+                <!--android:lines="1"-->
+                <!--android:maxLines="1"-->
+                <!--android:padding="@dimen/margin_8"-->
+                <!--android:scrollHorizontally="true"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:textColorHint="@color/colorGray"-->
+                <!--android:textSize="@dimen/_14sdp" />-->
+
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Select"-->
+                <!--android:id="@+id/btn_delear"-->
+                <!--android:layout_marginTop="@dimen/margin_16"-->
+                <!--android:padding="@dimen/margin_4"-->
+                <!--android:minWidth="56dp"-->
+                <!--android:minHeight="25dp"-->
+
+                <!--android:layout_centerVertical="true"-->
+                <!--android:textSize="@dimen/_10sdp"-->
+                <!--android:background="@drawable/btn_login"-->
+                <!--android:layout_marginEnd="@dimen/margin_4"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignBaseline="@+id/input_layout_delearCode"/>-->
+                <!--</RelativeLayout>-->
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@+id/card_status"
+
+                android:id="@+id/card_date"
+
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/margin_4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:id="@+id/ll_date"
+                    android:background="@drawable/cust_txt"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_start_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+
+                        android:padding="@dimen/margin_8"
+android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        app:errorEnabled="true"
+                        android:textColorHint="@color/colorGrayLight"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtStartDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="Start Date"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:inputType="date"
+
+                            android:padding="@dimen/margin_8"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_end_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:padding="@dimen/margin_8"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        app:errorEnabled="true"
+                        android:textColorHint="@color/colorGrayLight"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtEndDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="End Date"
+                            android:inputType="text"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:padding="@dimen/margin_8"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_date"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_input"
+            android:layout_margin="@dimen/margin_16" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                  
+                                                                
+     
+    
+                 
+                                     
+                                                                                                      
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".caldNet.newIndent.consignee.ConsigneeListActivity"
+        tools:showIn="@layout/activity_consignee_list" android:tag="layout/content_consignee_list_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvConsigneeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="binding_1"                                 
+                                                                                  
+                                                              />
+
+    </RelativeLayout>
+
+         

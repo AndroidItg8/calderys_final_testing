@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caldConnect.pds.PDSActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/cus_cursor"
+                    android:elevation="@dimen/margin_8"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_fileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginEnd="@dimen/margin_8"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/margin_4"
+                        android:text="UPLOAD YOUR FILE"
+                        android:textColor="@color/colorGrayLight"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="visible" />
+
+
+                    <FrameLayout
+                        android:id="@+id/rl_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center">
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_file"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:visibility="visible"
+                                app:backgroundTint="@color/colorWhite"
+                                app:fabCustomSize="80dp"
+                                app:fabSize="normal"
+                                app:srcCompat="@drawable/ic_file_uploads_black_24dp" />
+
+
+                            <!--<ImageView-->
+                            <!--android:id="@+id/img_circular"-->
+                            <!--android:layout_width="24dp"-->
+                            <!--android:layout_height="24dp"-->
+                            <!--android:elevation="@dimen/margin_8"-->
+                            <!--app:srcCompat="@drawable/bg_cus_pds"-->
+                            <!--/>-->
+
+                            <TextView
+                                android:id="@+id/txt_percentage"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:elevation="@dimen/margin_8"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_8"
+
+                                android:text="25"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/txt_14"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+
+                        <com.itg.calderysapp.widget.CircularProgressView
+                            android:id="@+id/progress_fab"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:indeterminate="false"
+                            android:visibility="gone"
+                            app:layout_anchor="@+id/rl_image"
+                            app:layout_anchorGravity="bottom|center" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_margin="@dimen/margin_16"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<ImageView-->
+                <!--android:layout_width="140dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:id="@+id/imgPdf"-->
+                <!--app:srcCompat="@drawable/ic_document" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/txt_fileName"-->
+                <!--android:padding="@dimen/margin_4"-->
+                <!--android:textSize="@dimen/txt_14"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:background="@color/half_transparent"-->
+                <!--android:visibility="gone" />-->
+
+                <!--</FrameLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_pds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:text="PDS Details"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/txt_14"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_pds"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:padding="@dimen/margin_8"
+                        android:textColorHint="@color/colorGrayLight"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtProductTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:hint="Product Name"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/SearchableSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:prompt="@string/select_prodcut"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                    android:id="@+id/SearchableSpinnerFamilyGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:prompt="@string/select_family"
+                        android:spinnerMode="dropdown" />
+
+
+                    <!--<com.itg.calderysapp.widget.SearchableSpinner-->
+                    <!--android:id="@+id/SearchableSpinner"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/margin_16"-->
+                    <!--android:layout_marginTop="@dimen/margin_16"-->
+                    <!--android:layout_marginEnd="@dimen/margin_16"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:visibility="visible"-->
+                    <!--app:BoarderColor="@color/colorPrimary"-->
+                    <!--app:BordersSize="1px"-->
+                    <!--app:DividerHeight="1px"-->
+                    <!--app:ItemsDivider="@color/colorGrayLight"-->
+                    <!--app:KeepLastSearch="true"-->
+                    <!--app:RevealEmptyText="Select Product Type"-->
+                    <!--app:RevealViewBackgroundColor="@color/colorWhite_400"-->
+                    <!--app:SearchViewBackgroundColor="@color/colorGrayLight"-->
+                    <!--app:SearchViewTextColor="@color/colorGray"-->
+                    <!--app:ShowBorders="true"-->
+                    <!--app:StartSearchTintColor="@color/colorBlack" />-->
+
+
+                    <!--<com.itg.calderysapp.widget.SearchableSpinner-->
+                        <!--android:id="@+id/SearchableSpinnerFamilyGroup"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="@dimen/margin_16"-->
+                        <!--android:layout_marginTop="@dimen/margin_16"-->
+                        <!--android:layout_marginEnd="@dimen/margin_16"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:visibility="visible"-->
+                        <!--app:BoarderColor="@color/colorPrimary"-->
+                        <!--app:BordersSize="1px"-->
+                        <!--app:DividerHeight="1px"-->
+                        <!--app:ItemsDivider="@color/colorGrayLight"-->
+                        <!--app:KeepLastSearch="true"-->
+                        <!--app:RevealEmptyText="Select Family Group"-->
+                        <!--app:RevealViewBackgroundColor="@color/colorWhite_400"-->
+                        <!--app:SearchViewBackgroundColor="@color/colorGrayLights"-->
+                        <!--app:SearchViewTextColor="@color/colorBlack"-->
+                        <!--app:ShowBorders="true"-->
+                        <!--app:StartSearchTintColor="@color/colorBlack" />-->
+
+                    <!--<com.itg.calderysapp.widget.MaterialBetterSpinner-->
+                    <!--android:id="@+id/spinnerFileType"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginTop="@dimen/margin_16"-->
+                    <!--android:layout_marginStart="@dimen/margin_16"-->
+                    <!--android:layout_marginEnd="@dimen/margin_16"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/SearchableSpinner"-->
+                    <!--android:hint="Select File Type"-->
+                    <!--android:padding="@dimen/margin_16" />-->
+
+                    <RadioGroup
+                        android:id="@+id/rdFileGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SearchableSpinnerFamilyGroup"
+                        android:layout_margin="@dimen/margin_16"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rd_public"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:padding="@dimen/margin_16"
+                            android:text="public"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/rd_crendtail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:padding="@dimen/margin_16"
+                            android:text="Crendentail"
+                            android:textColor="@color/colorBlack" />
+
+
+                    </RadioGroup>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16">
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_login"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Submit"
+                            android:textColor="@color/colorWhite" />
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <!--<include layout="@layout/content_pds" />-->
+
+    <!--<com.itg.calderysapp.widget.CircularProgressView-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="65dp"-->
+    <!--android:backgroundTint="@color/colorPrimary"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_anchor="@+id/rl_image"-->
+    <!--app:layout_anchorGravity="bottom|center" />-->
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:visibility="visible"-->
+    <!--app:backgroundTint="@color/colorPrimary"-->
+    <!--app:fabCustomSize="48dp"-->
+    <!--app:fabSize="normal"-->
+    <!--app:layout_anchor="@+id/rl_image"-->
+
+    <!--app:layout_anchorGravity="bottom|center"-->
+    <!--app:srcCompat="@drawable/ic_file_upload_black_24dp"-->
+    <!--tools:ignore="VectorDrawableCompat" />-->
+
+</android.support.design.widget.CoordinatorLayout>

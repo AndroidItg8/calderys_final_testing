@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginLeft="@dimen/margin_8"
+    android:layout_marginRight="@dimen/margin_8"
+
+    app:contentPadding="@dimen/margin_8"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+
+        <TextView
+            android:id="@+id/txt_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_4"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:layout_below="@+id/txt_date"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="TItle TItle"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"
+            android:layout_toStartOf="@+id/img"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_4"
+            android:gravity="center_vertical"
+            android:text="12\5\2018"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLogin"
+            android:textSize="@dimen/_10sdp" />
+
+
+
+            <TextView
+                android:id="@+id/txt_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="15m"
+                android:layout_centerHorizontal="true"
+                android:textColor="#dc8e8b8b"
+                android:textSize="10sp"
+                android:layout_alignBaseline="@+id/txt_date"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textStyle="normal" />
+
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="visible"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_below="@+id/txt_year"
+                android:minHeight="18dp"
+
+                app:srcCompat="@drawable/ic_attachment" />
+    </RelativeLayout>
+
+        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/txt_day"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/txt_year"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginStart="@dimen/margin_8"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="@dimen/margin_4"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginEnd="@dimen/margin_8"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:fontFamily="@font/open_sans"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="6"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/colorGray"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="normal" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/txt_day"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginStart="@dimen/margin_4"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="@dimen/margin_8"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginEnd="@dimen/margin_8"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;android:fontFamily="@font/open_sans"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Sep"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:textAllCaps="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/colorGray"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="10sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="normal"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/margin_8"-->
+        <!--android:visibility="gone">-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_title"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="@dimen/margin_8"-->
+            <!--android:ellipsize="end"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:lines="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="TItle TItle"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="@dimen/txt_14"-->
+            <!--android:textStyle="normal"-->
+            <!--android:visibility="visible" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/txt_title"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginStart="@dimen/margin_8"-->
+            <!--android:layout_marginTop="@dimen/margin_8"-->
+            <!--android:layout_marginEnd="@dimen/margin_8"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:text="2018"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="#dc8e8b8b"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textStyle="normal"-->
+            <!--android:visibility="visible" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_description"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/txt_title"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="@dimen/margin_4"-->
+            <!--android:layout_toStartOf="@+id/imgPdf"-->
+            <!--android:ellipsize="end"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:lines="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="Description Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorGray"-->
+            <!--android:textSize="@dimen/_10sdp"-->
+            <!--android:textStyle="normal"-->
+            <!--android:visibility="visible" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgPdf"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_below="@+id/txt_title"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginTop="@dimen/margin_8"-->
+            <!--android:layout_marginEnd="@dimen/margin_8"-->
+            <!--android:visibility="visible"-->
+            <!--app:srcCompat="@drawable/ic_attachment"-->
+            <!--tools:ignore="VectorDrawableCompat" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+</android.support.v7.widget.CardView>

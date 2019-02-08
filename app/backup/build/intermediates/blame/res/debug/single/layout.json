@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_consingee_add.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\activity_consingee_add.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_rv_cosignee_item.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\item_rv_cosignee_item.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_product_list.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\activity_product_list.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_materail_add.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\content_materail_add.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_transport_list.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\content_transport_list.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_product_list.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\content_product_list.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_materail_add.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\activity_materail_add.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_consingee_add.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\content_consingee_add.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_create_intent.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\activity_create_intent.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_create_intent.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\content_create_intent.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_consignee_list.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\content_consignee_list.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_consignee_list.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\activity_consignee_list.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_transport_list.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\activity_transport_list.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_rv_transport.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\item_rv_transport.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_rv_intent_material.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\item_rv_intent_material.xml"
+    },
+    {
+        "merged": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_rv_product.xml",
+        "source": "D:\\swappy data\\gitProject\\caldreys latest\\CalderysAppNew\\CalderysAppNew V2\\app\\src\\main\\res\\layout\\item_rv_product.xml"
+    }
+]

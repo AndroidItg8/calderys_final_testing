@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_8"
+    android:layout_marginRight="@dimen/margin_8"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:contentPadding="@dimen/margin_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/img_attach"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="TItle TItle"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_14"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/img_attach" />
+
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_titles"
+            android:layout_marginTop="@dimen/margin_8"
+            android:drawablePadding="@dimen/margin_4"
+            android:gravity="center_vertical"
+            android:text="12\5\2018"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLogin"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <ImageView
+            android:id="@+id/img_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/margin_4"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_attachment_hori"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp" />
+
+        <!--<View-->
+            <!--android:id="@+id/view"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_fileCount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/txt_date"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginStart="2dp"-->
+            <!--android:layout_toEndOf="@+id/txt_titles"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:gravity="top|start"-->
+            <!--android:visibility="gone"-->
+            <!--android:text="1 file"-->
+            <!--android:textColor="@color/colorGray"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textStyle="normal" />-->
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

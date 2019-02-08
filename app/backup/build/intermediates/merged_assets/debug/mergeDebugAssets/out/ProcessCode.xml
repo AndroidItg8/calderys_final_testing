@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="AL-001" Text="Aluminium Manufacturing (AL-001)"/>
+  <ListItems  Value="AM-001" Text="Alumina Manufacturing (AM-001)"/>
+  <ListItems  Value="CC-001" Text="Civil Constructions (CC-001)"/>
+  <ListItems  Value="CE-001" Text="Cement Manufacturing (CE-001)"/>
+  <ListItems  Value="CH-001" Text="Chemical Manufacturing (CH-001)"/>
+  <ListItems  Value="CM-001" Text="Coke Manufacturing (CM-001)"/>
+  <ListItems  Value="CO-001" Text="Copper Manufacturing(CO-001)"/>
+  <ListItems  Value="DR-001" Text="Dri Manufacturing (DR-001)"/>
+  <ListItems  Value="FA-001" Text="Ferro Alloys Manufacturing (FA-001)"/>
+  <ListItems  Value="FM-001" Text="Fertilizer Manufacturing (FM-001)"/>
+  <ListItems  Value="GM-001" Text="Glass Manufacturing (GM-001)"/>
+  <ListItems  Value="IF-001" Text="Iron Foundry (IF-001)"/>
+  <ListItems  Value="IM-001" Text="Iron Making (IM-001)"/>
+  <ListItems  Value="IM-002" Text="Insulator Manufacturing (IM-002)"/>
+  <ListItems  Value="IO-001" Text="Iron ore Processing (IO-001)"/>
+  <ListItems  Value="NF-001" Text="Non Ferrous Foundry (NF-001)"/>
+  <ListItems  Value="OTHER" Text="Other (OTHER)"/>
+  <ListItems  Value="PC-001" Text="Petro Chemical Manufacturing (PC-001)"/>
+  <ListItems  Value="PR-001" Text="Petroleum Refining (PR-001)"/>
+  <ListItems  Value="PP-001" Text="Thermal Power Generation (PP-001)"/>
+  <ListItems  Value="RM-001" Text="Refactory Manufacturing (RM-001)"/>
+  <ListItems  Value="SF-001" Text="Steel Foundry (SF-001)"/>
+  <ListItems  Value="SM-001" Text="Steel Making (SM-001)"/>
+  <ListItems  Value="SM-002" Text="Sanitaryware Manufacturing (SM-002)"/>
+  <ListItems  Value="TM-001" Text="Tableware Manufacturing (TM-001)"/>
+  <ListItems  Value="TM-002" Text="Floor Tiles Manufacturing (TM-002)"/>
+  <ListItems  Value="ZM-001" Text="ZINC Manufacturing (ZM-001)"/>
+</ListItems>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                  
+     
+    
+                 
+                                       
+                                                                                                 
+           
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".caldNet.newIndent.addmaterial.MaterailAddActivity"
+        tools:showIn="@layout/activity_materail_add" android:tag="layout/content_materail_add_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:id="@+id/rl_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/lbl_material_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+
+                android:padding="4dp"
+                android:text="Material Name"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/editMaterialNameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_material_name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:tag="binding_1"                                      
+                                                                         
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/lbl_material_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editMaterialNameSpinner"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+
+                android:text="Material Code"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/editMaterialCodeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_material_code"
+                android:inputType="text"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="10dp"
+                android:tag="binding_2"                                      
+                                                                        
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/lbl_product_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editMaterialCodeSpinner"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Product Remark "
+                android:textColor="@color/colorWhite" />
+
+
+            <EditText
+                android:id="@+id/editProductRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_product_remark"
+                android:background="@drawable/bg_react_header"
+                android:tag="binding_3"                                     
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack" />
+
+            <View
+                android:id="@+id/struts"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/lbl_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProductRemark"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Quantity"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_quantity"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:tag="binding_4"                               
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProductRemark"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Unit"
+                android:textColor="@color/colorWhite" />
+
+            <Spinner
+
+                android:id="@+id/edt_unit_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_unit"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:tag="binding_5"                                  
+                                                     
+                                                                       
+                                                                                   
+                android:inputType="number"
+                android:padding="4dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_price_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_unit_spinner"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Price Per Unit"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_price_unit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_price_unit"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:tag="binding_6"                                      
+                android:inputType="number"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/lbl_total_price_after_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_unit_spinner"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Total Price After Discount "
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+
+                android:id="@+id/edt_total_price_after_discount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_total_price_after_discount"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_react_header"
+                android:tag="binding_7"                                
+                android:inputType="number"
+                android:padding="4dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_total_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_total_price_after_discount"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Total Discount ( % )"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_total_discount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_total_discount"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/lbl_open_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_total_price_after_discount"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Open Discount ( % )"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+
+                android:id="@+id/edt_open_discount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_open_discount"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_react_header"
+                android:tag="binding_8"                                   
+                android:inputType="number"
+                android:padding="4dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_hidden_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_total_discount"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Hidden Discount ( % )"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_hidden_discount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_hidden_discount"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:tag="binding_9"                                     
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/lbl_dispatched_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_total_discount"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Dispacthed Date "
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_dispatched_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_dispatched_date"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_react_header"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:tag="binding_10"                                   
+                                                                         
+                android:inputType="number"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/lbl_transport_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_dispatched_date"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Transport Code"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edit_transport_codeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_transport_code"
+                android:inputType="text"
+                android:padding="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:tag="binding_11"                                    
+                                                                           
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/lbl_transport_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_transport_codeSpinner"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Transport Name "
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edit_transport_nameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_transport_name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:tag="binding_12"                                    
+                                                                           
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/lbl_inspections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_transport_nameSpinner"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Inspection "
+                android:textColor="@color/colorWhite" />
+
+            <Spinner
+                android:id="@+id/edit_inspections_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_inspections"
+                android:inputType="text"
+                android:tag="binding_13"                                       
+                                                                 
+                                                                       
+                android:padding="4dp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/lbl_rl_required"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_inspections_Spinner"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="LR Required"
+                android:textColor="@color/colorWhite" />
+
+            <Spinner
+                android:id="@+id/edt_rl_required_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_rl_required"
+                android:layout_alignEnd="@+id/struts"
+                android:inputType="text"
+                android:tag="binding_14"                                       
+                                                                 
+                                                                       
+                android:padding="4dp"
+                android:textColor="@color/colorBlack" />
+
+
+            <TextView
+                android:id="@+id/lbl_tc_required"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_inspections_Spinner"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="TC Required"
+                android:textColor="@color/colorWhite" />
+
+            <Spinner
+
+                android:id="@+id/edt_tc_required_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_tc_required"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:tag="binding_15"                                       
+                                                                 
+                                                                       
+                android:inputType="number"
+
+                android:padding="4dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_tc_required_spinner"
+                android:layout_margin="@dimen/margin_16"
+
+                >
+
+                <Button
+                    android:id="@+id/btnSubmitMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimarys"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:tag="binding_16"                           
+                    android:textColor="@color/colorWhite" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+         

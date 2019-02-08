@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Calderys</string>
+    <string name="app_name_connect">Calde Connect</string>
+    <string name="app_name_net">CaldNet</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_pds">Product Data Sheet</string>
+    <string name="title_Updates">Updates</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty">Field is empty</string>
+    <string name="invalid_pass">Password must be minimum 6 characters</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="url_login">login/checklogin.php</string>
+    <string name="title_activity_add"> Add Update</string>
+    <string name="title_activity_pds"> Add PDS</string>
+    <string name="product_type">product_type</string>
+    <string name="family_group">group_add</string>
+    <string name="search">Search</string>
+
+
+    <string name="default_notification_channel_id">CalderysAppDesignedByItech</string>
+
+    <string name="describtion">Dear Calderys India Channel Partner, welcome to CaldeConnect!
+CaldeConnect provides you one-click access to all the information and data sheets (such as product data sheets, industry brochures, product presentations, heating cycle, discount policy etc.) required to carry out your day-to-day business.
+        CaldeConnect also keeps you updated with news and updates surrounding Calderys India and refractory industry.</string>
+    <string name="title_activity_gallery">MANAGE PHOTO GALLERY</string>
+    <string name="rationale_no_permission">Please Provide Permission</string>
+    <string name="title_activity_gallery_details">Gallery Details</string>
+    <string name="photo_gallery">Add Photo Gallery</string>
+    <string name="select_prodcut">Select Product Type</string>
+    <string name="select_family">Select Family Group</string>
+    <string name="title_activity_create_intent">Create Intent</string>
+    <string name="token">token</string>
+    <string name="server_key">AAAAg8McGOQ:APA91bEn1Qhg--Qs3nDuce76GLNYaLkpfHAvu4RCeysejqtGgf98W-xMWZDKmTSpominJ9rwQPdJV3AbQuAP8Kkhzx3x0M_A7eFo8SfR04gHPcepw75ZZ1QgiZPmvgdU6LM9lsaviqJF</string>
+    <string name="title_intent">Indents</string>
+    <string name="dealerCode">Select Delear Code</string>
+    <string name="select_status">Select Status</string>
+    <string name="select_intent">select_intent</string>
+    <string name="title_activity_intent_base"></string>
+    <string name="title_activity_consingee_add">Add Consignee</string>
+    <string name="title_activity_add_setting"></string>
+    <string name="title_activity_materail_add">Add Material</string>
+    <string name="title_activity_view_details">View Indent Detail</string>
+    <string name="title_activity_create_indent_new">Create Indent</string>
+    <string name="title_activity_consignee_list">Consignee List</string>
+    <string name="title_activity_transport_list">Transport List</string>
+    <string name="title_activity_product_list">Product List</string>
+    <string name="title_activity_product_details">Product Details</string>
+
+    <!--<string-array name="Units">-->
+    <!--<item >" Value= 0:Text=Select Units"</item>-->
+    <!--<item >"Value= MT :Text="Metric Tons (MT)"</item>-->
+    <!--<item >"Value=KG :Text="Kilograms (KG)"</item>-->
+    <!--<item >"Value=LTR: Text="Liters (LTR)"</item>-->
+    <!--<item >"Value=PC: Text="Pieces (PC)"</item>-->
+    <!--<item >"Value= NOS: Text="Numbers (NOS)"</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="IntentType">-->
+    <!--<item >" Value= 0:Text=Select Units"</item>-->
+    <!--<item >"Value= MT :Text="Metric Tons (MT)"</item>-->
+    <!--<item >"Value=KG :Text="Kilograms (KG)"</item>-->
+    <!--<item >"Value=LTR: Text="Liters (LTR)"</item>-->
+    <!--<item >"Value=PC: Text="Pieces (PC)"</item>-->
+    <!--<item >"Value= NOS: Text="Numbers (NOS)"</item>-->
+    <!--</string-array>-->
+
+
+</resources>

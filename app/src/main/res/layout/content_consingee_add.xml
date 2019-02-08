@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="consigneeModel"
+            type="com.itg.calderysapp.caldNet.newIndent.consignee.viewmodel.ConsigneeViewModel" />
+    </data>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".caldNet.newIndent.consignee.ConsingeeAddActivity"
+    tools:showIn="@layout/activity_consingee_add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_react_header"
+            android:padding="10dp"
+            android:text="Add Consignee "
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimarys" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbl_dealer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Consignee Name"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/editDealerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_dealer_name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text="@{consigneeModel.model.ConsigneeName}"
+                android:fontFamily="@font/open_sans"
+                app:textwatcher='@{"ConsigneeName"}'
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/lbl_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editDealerName"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Postal/Pin Code"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_postal"
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:text="@{consigneeModel.model.PostalCode}"
+                app:textwatcher='@{"PostalCode"}'
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp" />
+
+
+            <View
+                android:id="@+id/strut"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/edt_postal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/lbl_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_postal"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Country"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentLeft="true" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/edt_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_country"
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                app:customEntriesCounty="@{consigneeModel.allContriesObs}"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_country"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:drawablePadding="@dimen/margin_4"
+                android:padding="4dp"
+                android:text="Region "
+                android:textColor="@color/colorWhite" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/edtRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_region"
+                app:customEntriesRegion="@{consigneeModel.allReagions}"
+                android:background="@drawable/bg_react_header"
+                android:inputType="text"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_ecc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtRegion"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="ECC No"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+
+                android:id="@+id/edt_ecc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_ecc_number"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:text="@{consigneeModel.model.EccNo}"
+                app:textwatcher='@{"EccNo"}'
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/lbl_lst_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtRegion"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="LST NO"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+            <EditText
+                android:id="@+id/edt_lst_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_lst_no"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+                android:text="@{consigneeModel.model.LSTNo}"
+                app:textwatcher='@{"LSTNo"}'
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+            <TextView
+                android:id="@+id/lbl_tin_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_lst_no"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="TIN No"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+
+                android:id="@+id/edt_tin_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_tin_number"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:text="@{consigneeModel.model.TinNo}"
+                app:textwatcher='@{"TinNo"}'
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/lbl_cst_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_lst_no"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="CST NO"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+            <EditText
+                android:id="@+id/edt_cst_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_cst_no"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:text="@{consigneeModel.model.CSTNo}"
+                app:textwatcher='@{"CSTNo"}'
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+
+            <TextView
+                android:id="@+id/lbl_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_tin_number"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Mobile No"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+
+                android:id="@+id/edt_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_mobile_number"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:text="@{consigneeModel.model.Mobile}"
+                app:textwatcher='@{"Mobile"}'
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/lbl_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_tin_number"
+
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Email Address "
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+            <EditText
+                android:id="@+id/edt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_email_address"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+                android:background="@drawable/bg_react_header"
+                android:inputType="textEmailAddress"
+                android:text="@{consigneeModel.model.Email}"
+                app:textwatcher='@{"Email"}'
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10sdp"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/lbl_consingee_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_email_address"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Consignee Address(Do Not Write M/S)"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_consingee_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_consingee_address"
+                android:background="@drawable/bg_react_header"
+                android:maxLines="3"
+                android:lines="3"
+                android:ellipsize="end"
+                android:text="@{consigneeModel.model.ConsigneeAddress}"
+                app:textwatcher='@{"ConsigneeAddress"}'
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/lbl_lst_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_consingee_address"
+
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="LST Date "
+                android:textColor="@color/colorWhite" />
+
+
+
+
+            <EditText
+                android:id="@+id/edt_lst_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_lst_date"
+                android:text="@={consigneeModel.model.LSTDate}"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="@{consigneeModel::onDatePick}"
+                app:textwatcher='@{"LSTDate"}'
+                android:background="@drawable/bg_react_header"
+                android:inputType="date"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_telephone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_lst_date"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Telephone  Number "
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+
+
+
+            <EditText
+                android:id="@+id/edt_telephone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_telephone_no"
+                android:layout_alignEnd="@+id/strut"
+                android:layout_alignParentStart="true"
+                android:text="@{consigneeModel.model.Phone}"
+                app:textwatcher='@{"Phone"}'
+                android:background="@drawable/bg_react_header"
+                android:inputType="number"
+                android:padding="10dp"
+                android:layout_alignRight="@+id/strut"
+                android:layout_alignParentLeft="true" />
+
+
+
+            <TextView
+                android:id="@+id/lbl_fax_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_lst_date"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:drawablePadding="@dimen/margin_4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/strut"
+
+                android:padding="4dp"
+                android:text="FAX No"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+            <EditText
+                android:id="@+id/edtFaxNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_fax_no"
+                android:background="@drawable/bg_react_header"
+                android:layout_alignParentEnd="true"
+                android:text="@{consigneeModel.model.FaxNo}"
+                app:textwatcher='@{"FaxNo"}'
+                android:layout_alignStart="@+id/strut"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/strut" />
+
+
+            <TextView
+                android:id="@+id/lbl_contant_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtFaxNo"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:drawablePadding="@dimen/margin_4"
+                android:padding="4dp"
+                android:text="Contact Person "
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edtContactPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_contant_person"
+                android:text="@{consigneeModel.model.ContactPerson}"
+                app:textwatcher='@{"ContactPerson"}'
+                android:background="@drawable/bg_react_header"
+                android:inputType="text"
+                android:padding="10dp" />
+
+
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtContactPerson"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="10dp"
+                android:text="Add Consignee"
+                android:onClick="@{consigneeModel::onSubmitClick}"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
+</layout>

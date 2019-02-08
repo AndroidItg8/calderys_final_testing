@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_16"
+    app:cardCornerRadius="@dimen/margin_16"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".caldConnect.pds.PDSDetailsFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16">
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@+id/txt_date"
+                android:layout_alignBottom="@+id/txt_share"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/img_edit"
+                app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@+id/txt_date"
+                android:layout_alignBottom="@+id/txt_share"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/ic_mode_edit_24dp" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:drawablePadding="@dimen/margin_4"
+                android:text="12\5\2018"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLogin"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_date"
+                android:layout_margin="@dimen/margin_8"
+                android:drawablePadding="@dimen/margin_4"
+                android:text="Public"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLogin"
+                android:textSize="@dimen/_10sdp" />
+
+            <View
+                android:id="@+id/views"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/txt_share"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorGrayLight" />
+
+
+            <TextView
+                android:id="@+id/txt_titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/views"
+                android:layout_marginTop="@dimen/margin_8"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:text="TItle TItle"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_descriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_titles"
+                android:layout_margin="@dimen/margin_8"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:text="@string/describtion"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_14"
+
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/txt_descriptions"
+                android:layout_margin="@dimen/margin_8"
+                android:background="@color/colorGrayLight" />
+
+
+            <TextView
+                android:id="@+id/lbl_productType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Product Type:"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLogin"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txt_productType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_productType"
+                android:layout_gravity="left"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:gravity="left|center_vertical"
+                android:text="PRODUCT TYPE"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans"
+
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/lbl_familyGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_productType"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Family Group:"
+                android:layout_marginBottom="@dimen/margin_4"
+
+                android:textAllCaps="false"
+                android:textColor="@color/colorLogin"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txt_familyGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_familyGroup"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:text="FAMILY GROUP"
+                android:fontFamily="@font/open_sans"
+                android:layout_above="@+id/frame"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_10sdp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+
+                <Button
+                    android:id="@+id/btn_fileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:background="@drawable/bg_btn"
+                    android:drawablePadding="@dimen/margin_4"
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingStart="@dimen/margin_8"
+                    android:paddingEnd="@dimen/margin_8"
+                    android:text="EIL Calderys.pdf"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/frame"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_above="@+id/ll"-->
+            <!--android:layout_alignTop="@+id/txt_titles"-->
+            <!--android:layout_centerVertical="true">-->
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:visibility="visible"-->
+            <!--android:id="@+id/img_download"-->
+            <!--app:srcCompat="@drawable/btn_fab" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="gone">-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_percent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignStart="@+id/progress"-->
+            <!--android:layout_alignTop="@+id/progress"-->
+            <!--android:layout_alignEnd="@+id/progress"-->
+            <!--android:layout_alignBottom="@+id/progress"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="50%"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="10sp" />-->
+            <!--</RelativeLayout>-->
+
+
+            <!--</FrameLayout>-->
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</android.support.design.card.MaterialCardView>

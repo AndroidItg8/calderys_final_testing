@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="consigneeModel"
+            type="com.itg.calderysapp.caldNet.newIndent.consignee.viewmodel.ConsigneeItemViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{consigneeModel::itemClicked}"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/margin_4">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_consignee_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="Consignee Code"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_consignee_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="@{consigneeModel.model.consigneeCode}"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_consignee_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="Consignee Name"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_consignee_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="@{consigneeModel.model.consigneeName}"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_consignee_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="Consignee Address"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_consignee_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="@{consigneeModel.model.consigneeAddress}"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_consignee_eccno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="Consignee ECCNo"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_consignee_eccNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="@{consigneeModel.model.consigneeECCNo}"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_consignee_cstNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="Consignee CSTNo"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_consignee_cstNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="@{consigneeModel.model.consigneeCSTNo}"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_consignee_TinNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="Consignee TinNo"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_consignee_tinNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_txt"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/margin_8"
+                    android:text="@{consigneeModel.model.consigneeTINNo}"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </android.support.v7.widget.CardView>
+</layout>

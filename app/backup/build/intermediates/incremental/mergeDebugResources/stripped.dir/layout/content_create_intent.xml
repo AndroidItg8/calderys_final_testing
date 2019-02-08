@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+     
+    
+
+                 
+                                    
+                                                                                                   
+                 
+                               
+                                                                                              
+
+           
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".caldNet.newIndent.createIntent.CreateIntentActivity"
+        tools:showIn="@layout/activity_create_intent" android:tag="layout/content_create_intent_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/headerItemText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_react_header"
+                    android:padding="10dp"
+                    android:text="create Indent"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimarys" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lbl_dealer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="Dealer Name"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/editDealerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_dealer_name"
+                        android:inputType="none"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:tag="binding_1"                       
+                        android:padding="10dp"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/lbl_Po_Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editDealerName"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="PO Number"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/edtPoNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_Po_Number"
+                        android:background="@drawable/bg_react_header"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:tag="binding_2"                           
+                                                             
+                        android:padding="10dp" />
+
+
+                    <View
+                        android:id="@+id/strut"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/edtPoNumber"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/lbl_igst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtPoNumber"
+                        android:layout_alignEnd="@+id/strut"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="IGST"
+                        android:textColor="@color/colorWhite" />
+
+                    <Spinner
+                        android:id="@+id/edt_igst"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/lbl_igst"
+                        android:layout_alignEnd="@+id/strut"
+                        android:background="@drawable/bg_react_header"
+
+
+                        android:layout_alignParentStart="true"
+                        android:tag="binding_3"                       
+                                                          
+                                                                       
+                                                                          
+                        android:inputType="number"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/lbl_sgst_cgst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtPoNumber"
+                        android:layout_alignStart="@+id/strut"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="SGST + CGST"
+                        android:textColor="@color/colorWhite" />
+
+                    <Spinner
+                        android:id="@+id/edt_sgst_cgst"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/lbl_igst"
+                        android:layout_alignStart="@+id/strut"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_react_header"
+
+                        android:tag="binding_4"                       
+                                                          
+                                                                       
+                                                                          
+                        android:inputType="number"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/lbl_intent_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_sgst_cgst"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="Intent Type"
+                        android:textColor="@color/colorWhite" />
+
+                    <Spinner
+                        android:id="@+id/edtIntentTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/lbl_intent_type"
+                        android:focusable="false"
+                        android:background="@drawable/bg_react_header"
+
+                        android:focusableInTouchMode="false"
+                        android:tag="binding_5"                       
+                                                          
+                                                                                 
+                                                                 
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/lbl_plant_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtIntentTypeSpinner"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="Plant Code"
+                        android:textColor="@color/colorWhite" />
+
+                    <Spinner
+                        android:id="@+id/edtPlantCodeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/lbl_plant_code"
+                        android:background="@drawable/bg_react_header"
+
+                        android:tag="binding_6"                            
+                                                               
+                                                                                
+                                                                       
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/lbl_constite_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtPlantCodeSpinner"
+                        android:layout_marginTop="4dp"
+                        android:layout_toStartOf="@+id/lbl_name_consingee"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="Consignee Code"
+
+                        android:textColor="@color/colorWhite" />
+
+
+                    <TextView
+                        android:id="@+id/lbl_name_consingee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtPlantCodeSpinner"
+                        android:layout_alignStart="@+id/strut"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:padding="4dp"
+                        android:text="Consignee Name"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/edtConsingee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_constite_code"
+                        android:layout_alignEnd="@+id/strut"
+                        android:background="@drawable/bg_react_header"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:tag="binding_7"                              
+                                                                               
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/edtAddConsingee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_constite_code"
+                        android:layout_alignStart="@+id/strut"
+                        android:background="@drawable/bg_react_header"
+                        android:tag="binding_8"                              
+                                                                               
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_add_consignee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtAddConsingee"
+                        android:layout_margin="@dimen/margin_8"
+                        android:background="@drawable/cust_btn"
+                        android:text="Click here to add new Consignee"
+                        android:textColor="@color/colorPrimary"
+                        android:tag="binding_9"                                  
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/lbl_tax_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_add_consignee"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:drawablePadding="@dimen/margin_4"
+                        android:padding="4dp"
+                        android:text="Add ED/Tax Info"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/edtTaxInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_tax_info"
+                        android:background="@drawable/bg_react_header"
+                        android:inputType="text"
+                        android:tag="binding_10"                          
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/lbl_po_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtTaxInfo"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_toStartOf="@+id/lbl_delivery_date"
+                        android:background="@color/colorPrimarys"
+                        android:drawablePadding="@dimen/margin_4"
+                        android:padding="4dp"
+
+                        android:text="PO DATE"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/edtPODate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_po_date"
+                        android:layout_toStartOf="@+id/edtDeliveryDate"
+                        android:background="@drawable/bg_react_header"
+                        android:focusable="false"
+                        android:tag="binding_11"                      
+                                                                        
+                        android:focusableInTouchMode="false"
+                        android:inputType="date"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/lbl_delivery_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtTaxInfo"
+                        android:layout_alignStart="@+id/strut"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:drawablePadding="@dimen/margin_4"
+                        android:padding="4dp"
+                        android:text="Delivery DATE"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/edtDeliveryDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_delivery_date"
+                        android:layout_alignStart="@+id/strut"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_react_header"
+                        android:focusable="false"
+                        android:tag="binding_12"                            
+                                                                              
+                        android:focusableInTouchMode="false"
+                        android:inputType="date"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/lbl_division"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtDeliveryDate"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:drawablePadding="@dimen/margin_4"
+                        android:padding="4dp"
+                        android:text="Division"
+                        android:textColor="@color/colorWhite" />
+
+                    <Spinner
+                        android:id="@+id/edtDivision"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/lbl_division"
+                        android:background="@drawable/bg_react_header"
+
+                        android:inputType="text"
+                        android:tag="binding_13"                    
+                                                                 
+                                                                               
+                                                        
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/lbl_consingee_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtDivision"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:drawablePadding="@dimen/margin_4"
+                        android:padding="4dp"
+                        android:text="Consignee Name"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edtConsingeeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_consingee_name"
+                        android:background="@drawable/bg_react_header"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/lbl_cc_email_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtConsingeeName"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimarys"
+                        android:drawablePadding="@dimen/margin_4"
+                        android:padding="4dp"
+                        android:text="CC Email ID"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/edtCCEMailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_cc_email_id"
+                        android:background="@drawable/bg_react_header"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:maxLines="3"
+                        android:padding="10dp" />
+
+
+
+
+                    <Button
+                        android:id="@+id/btn_add_material"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtCCEMailId"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/margin_8"
+                        android:tag="binding_14"                                  
+                        android:background="@drawable/cust_btn"
+                        android:text="Add Material"
+
+
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="visible" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/btn_add_material"
+                        android:layout_height="wrap_content"
+                        android:tag="binding_15"                                        
+                                                                            
+                        android:layout_marginTop="@dimen/margin_16" />
+
+                    <TextView
+                        android:id="@+id/totalValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recyclerView"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Total Indent Value : "/>
+
+                    <TextView
+                        android:id="@+id/totalValueActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recyclerView"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:tag="binding_16"                      />
+
+                    <LinearLayout
+                        android:id="@+id/ll_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/totalValue"
+
+                        >
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_8"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarys"
+                        android:layout_below="@+id/recyclerView"
+                        android:tag="binding_17"                            
+                        android:padding="10dp"
+                        android:text="Submit"
+                        android:textColor="@color/colorWhite" />
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_8"
+                        android:background="@color/colorPrimarys"
+                        android:tag="binding_18"                           
+                        android:layout_below="@+id/recyclerView"
+                        android:padding="10dp"
+                        android:text="Save"
+                        android:textColor="@color/colorWhite" />
+                    <Button
+                        android:id="@+id/btnReset"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:tag="binding_19"                            
+                        android:layout_margin="@dimen/margin_8"
+                        android:background="@color/colorPrimarys"
+                        android:layout_below="@+id/recyclerView"
+                        android:padding="10dp"
+                        android:text="Reset"
+                        android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/llApproveReject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btnApprove"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:text="APPROVE"
+                        android:textColor="@color/colorWhite" />
+
+                    <Button
+                        android:id="@+id/btnReject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:background="@color/PrimaryColorDark2"
+                        android:text="REJECT"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressEdit"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+         

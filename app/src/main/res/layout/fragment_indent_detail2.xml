@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrolling"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_8">
+
+        <RelativeLayout
+            android:id="@+id/rl_indents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_intents_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/txt_10"
+                android:text="Indent  Details"
+                android:textColor="@color/colorWhite" />
+
+            <TableLayout
+                android:id="@+id/simpleTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_intents_details"
+                android:background="@drawable/cust_txt"
+                android:stretchColumns="1">
+
+                <TableRow
+
+                    android:id="@+id/tbl_row_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- first element of the row-->
+                    <TextView
+                        android:id="@+id/lbl_indent_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Indent Code"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_indent_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:text=""
+                        android:padding="@dimen/margin_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </TableRow>
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- first element of the row-->
+                    <TextView
+                        android:id="@+id/lbl_indent_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Indent Status"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_indent_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:text=" "
+                        android:padding="@dimen/margin_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </TableRow>
+
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_dealer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Consignee Name"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_dealer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="  "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Consignee Code"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_consignee_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=" "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/lbl_indent_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Indent Date "
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_indent_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="11-12-2018"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </TableRow>
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_po_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Po Number"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_po_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/lbl_po_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Po Date"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_po_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                </TableRow>
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_igst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=" IGST"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_igst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/txt_so_number"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/margin_8"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_sgst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+
+                        android:padding="@dimen/margin_8"
+                        android:text="SGST +CGST"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_sgst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=" "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_consignee_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Transport Name"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txt_consignee_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=" "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lbl_Delivery_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Delivery Date"
+                        android:textColor="@color/colorGray"
+
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/txt_delivery_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lbl_add_tax_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:text="Tax Info"
+
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/txt_add_tax_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cust_txt"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_indents"
+
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8">
+
+            <TextView
+                android:id="@+id/lbl_product_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/txt_10"
+                android:text="Product Details"
+                android:textColor="@color/colorWhite" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lbl_product_details"
+                android:layout_marginTop="@dimen/margin_4"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_approved_reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_material"
+            android:layout_marginTop="@dimen/margin_8"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/margin_8">
+
+            <TextView
+                android:id="@+id/lbl_so_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/txt_10"
+                android:text="S.O Details"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:id="@+id/struts"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/lbl_so_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_so_details"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="SO Type"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <Spinner
+                android:id="@+id/so_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_so_type"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/bg_cus_spinner"
+                android:inputType="number"
+                android:padding="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/struts" />
+
+
+            <TextView
+                android:id="@+id/lbl_sales_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_so_details"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Sales Office"
+                android:textColor="@color/colorWhite"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <Spinner
+
+                android:id="@+id/sales_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_sales_office"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:inputType="number"
+                android:padding="4dp"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/lbl_distribution_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sales_spinner"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Distribution Channel"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_destribution_channel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_distribution_channel"
+                android:background="@drawable/bg_react_header"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/lbl_usage_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_destribution_channel"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Usage Indicator"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <Spinner
+                android:id="@+id/usaga_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_usage_indicator"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:inputType="number"
+                android:padding="4dp"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/lbl_process_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_destribution_channel"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Process Code "
+                android:textColor="@color/colorWhite"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <Spinner
+
+                android:id="@+id/process_code_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_process_code"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:padding="4dp"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/lbl_devision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/process_code_spinner"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Division"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/edt_devision"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_devision"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_react_header"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:padding="4dp"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/lbl_sales_organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/process_code_spinner"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Sales Organization"
+                android:textColor="@color/colorWhite"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <EditText
+                android:id="@+id/edt_sales_organization"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_sales_organization"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_react_header"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:padding="4dp"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+
+            <TextView
+                android:id="@+id/lbl_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_devision"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Equipment Code"
+                android:textColor="@color/colorWhite"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <Spinner
+
+                android:id="@+id/equipment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_equipment"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:padding="4dp"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+
+            <TextView
+                android:id="@+id/lbl_spl_process_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_devision"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Special Process Indicator"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <Spinner
+                android:id="@+id/spl_process_indicator_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_spl_process_indicator"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:inputType="number"
+                android:padding="4dp"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/lbl_partner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spl_process_indicator_spinner"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Partner"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/edt_partner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/lbl_partner"
+                android:background="@drawable/bg_react_header"
+                android:inputType="text"
+                android:padding="4dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_sales_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_partner"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Sales Group"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <Spinner
+                android:id="@+id/sales_group_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_sales_grp"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:inputType="number"
+                android:padding="4dp"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/lbl_sales_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_partner"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Sales Package"
+                android:textColor="@color/colorWhite"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+            <Spinner
+
+                android:id="@+id/sales_package_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lbl_sales_package"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_cus_spinner"
+                android:padding="4dp"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+
+
+            <TextView
+                android:id="@+id/lbl_approve_reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sales_package_spinner"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/txt_10"
+                android:text="Approve/Reject"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/lbl_comment_for_approved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_approve_reject"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/colorPrimarys"
+                android:padding="4dp"
+                android:text="Comments fro Approved/Reject"
+                android:textColor="@color/colorWhite" />
+
+
+            <EditText
+                android:id="@+id/edt_approved_reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_comment_for_approved"
+                android:background="@drawable/bg_react_header"
+                android:ellipsize="end"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack" />
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_approved_reject"
+                android:layout_alignEnd="@+id/struts"
+                android:layout_alignParentStart="true"
+                android:layout_margin="16dp"
+                android:background="@color/colorGreen"
+                android:text="APPROVE"
+                android:textColor="@color/colorWhite"
+                android:layout_alignRight="@+id/struts"
+                android:layout_alignParentLeft="true" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/edt_approved_reject"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+
+                />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_approved_reject"
+                android:layout_alignStart="@+id/struts"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@color/PrimaryColorDark2"
+                android:text="REJECT"
+                android:textColor="@color/colorWhite"
+                android:layout_alignLeft="@+id/struts"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

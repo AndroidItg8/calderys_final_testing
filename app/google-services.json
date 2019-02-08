@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "565914114276",
+    "firebase_url": "https://calderysapp.firebaseio.com",
+    "project_id": "calderysapp",
+    "storage_bucket": "calderysapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565914114276:android:b30dbdba334d603d",
+        "android_client_info": {
+          "package_name": "com.itg.calderysapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565914114276-jnekfrqfg3uee2triarqrsmhjoiqf3jg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itg.calderysapp",
+            "certificate_hash": "71cca9fa202d5d86f6bfda7515dd0830b26bd4fb"
+          }
+        },
+        {
+          "client_id": "565914114276-rm95grv7c387558a9gt0jo2eocpmd3rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYKHJrCrKFFrsBk6EwuxKsn9ViYcTQwss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565914114276-rm95grv7c387558a9gt0jo2eocpmd3rh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

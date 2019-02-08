@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caldNet.newIndent.intent.fragment.IndentDetailFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"/>
+
+    <Button
+        android:id="@+id/btn_download_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login"
+        android:layout_margin="@dimen/margin_8"
+        android:visibility="gone"
+        android:text="Download"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlNoData"
+        android:visibility="gone"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/img_no"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_opened_white_box"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_no"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorGray"
+            android:id="@+id/txt_no_data"
+            android:text="Dispatched List Not Available"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

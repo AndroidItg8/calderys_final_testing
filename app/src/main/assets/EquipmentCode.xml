@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="AL0101" Text="Anode Baking Furnace (AL0101)"/>
+  <ListItems  Value="AL0103" Text="Melting and Holding Furnace (AL0103)"/>
+  <ListItems  Value="CO0101" Text="Smelter (CO0101)"/>
+  <ListItems  Value="OTHER" Text="Other (OTHER)"/>
+</ListItems>
+
+

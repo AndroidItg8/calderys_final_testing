@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">14dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="txt_10">8sp</dimen>
+    <dimen name="txt_12">10sp</dimen>
+    <dimen name="txt_14">12sp</dimen>
+    <dimen name="txt_16">14sp</dimen>
+    <dimen name="txt_18">16sp</dimen>
+    <dimen name="txt_20">18sp</dimen>
+    <dimen name="fab_margin">14dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+</resources>

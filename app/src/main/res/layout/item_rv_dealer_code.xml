@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="@dimen/margin_8"
+    android:layout_marginStart="@dimen/margin_8"
+    android:layout_marginEnd="@dimen/margin_8"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_8">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/lbl_dealer_code"
+            android:textColor="@color/colorGray"
+            android:text="DealerName:"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/colorBlack"
+            android:text="Dealer Name"
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_toEndOf="@+id/lbl_dealer_code"
+            android:id="@+id/txt_dealerCode"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/lbl_dealer_code" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/lbl_dealer_name"
+            android:textColor="@color/colorGray"
+            android:text="DealerCode:"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_below="@+id/txt_dealerCode"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/colorBlack"
+            android:text="12345678890887676"
+            android:id="@+id/txt_dealerName"
+            android:layout_alignBaseline="@+id/lbl_dealer_name"
+            android:layout_toEndOf="@+id/lbl_dealer_name"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_below="@+id/txt_dealerCode"
+
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/lbl_dealer_name" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>

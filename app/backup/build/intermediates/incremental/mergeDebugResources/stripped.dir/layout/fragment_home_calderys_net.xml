@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".home.HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/calderys_net"
+                android:id="@+id/img_calderys_net"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_calderys_net"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/margin_4"
+                android:layout_margin="@dimen/margin_8"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_impt_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Important Message"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:padding="@dimen/margin_8"
+                        android:background="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                    <com.itg.calderysapp.widget.AutoScrollViewPager
+                        android:id="@+id/view_pager_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/txt_impt_message"
+                        android:layout_marginTop="@dimen/margin_4"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_left"
+                        android:layout_width="30dp"
+                        android:padding="4dp"
+                        android:layout_height="30dp"
+                        android:visibility="invisible"
+                        android:layout_alignTop="@+id/txt_impt_message"
+                        android:layout_alignBottom="@+id/txt_impt_message"
+                        app:srcCompat="@drawable/ic_left_black_arrow" />
+
+                    <ImageView
+                        android:id="@+id/img_right"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="4dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/txt_impt_message"
+                        android:layout_alignBottom="@+id/txt_impt_message"
+                        app:srcCompat="@drawable/ic_right_black_arrow" />
+
+                    <Button
+                        android:id="@+id/btn_view_all_links"
+                        style="@style/TextAppearance.MaterialComponents.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginBottom="@dimen/margin_8"
+                        android:background="@drawable/btn_border"
+                        android:layout_below="@+id/view_pager_title"
+                        android:minHeight="30dp"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_descriptions"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/card"-->
+            <!--android:layout_margin="@dimen/margin_8"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:text="@string/describtion"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorGray"-->
+
+            <!--android:textSize="@dimen/txt_14"-->
+            <!--android:textStyle="normal"-->
+            <!--android:paddingBottom="@dimen/margin_8"-->
+            <!--android:visibility="visible" />-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/margin_4"
+                android:layout_margin="@dimen/margin_8"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_success_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Success  Stories"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:padding="@dimen/margin_8"
+                        android:background="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                    <com.itg.calderysapp.widget.AutoScrollViewPager
+                        android:id="@+id/view_pagerSuccess_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/txt_success_items"
+                        android:layout_marginTop="@dimen/margin_4"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_left_success"
+                        android:layout_width="30dp"
+                        android:padding="4dp"
+                        android:layout_height="30dp"
+                        android:visibility="invisible"
+                        android:layout_alignTop="@+id/txt_success_items"
+                        android:layout_alignBottom="@+id/txt_success_items"
+                        app:srcCompat="@drawable/ic_left_black_arrow" />
+
+                    <ImageView
+                        android:id="@+id/img_right_success"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="4dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/txt_success_items"
+                        android:layout_alignBottom="@+id/txt_success_items"
+                        app:srcCompat="@drawable/ic_right_black_arrow" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

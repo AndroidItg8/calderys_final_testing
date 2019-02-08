@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="0" Text="Select Units"/>
+  <ListItems  Value="MT" Text="Metric Tons (MT)"/>
+  <ListItems  Value="KG" Text="Kilograms (KG)"/>
+  <ListItems  Value="LTR" Text="Liters (LTR)"/>
+  <ListItems  Value="PC" Text="Pieces (PC)"/>
+  <ListItems  Value="NOS" Text="Numbers (NOS)"/>
+ 
+
+</ListItems>

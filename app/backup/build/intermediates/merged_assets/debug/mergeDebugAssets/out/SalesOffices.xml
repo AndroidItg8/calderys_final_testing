@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="AHM" Text="Ahmedabad (AHM)"/>
+  <ListItems  Value="BELL" Text="Bellary sales office (BELL)"/>
+  <ListItems  Value="BOM" Text="Bombay (BOM)"/>
+  <ListItems  Value="CAL" Text="Calcutta (CAL)"/>
+  <ListItems  Value="DEL" Text="Delhi (DEL)"/>
+  <ListItems  Value="IASE" Text="Iron and Steel-East (IASE)"/>
+  <ListItems  Value="IASR" Text="Iron and Steel-Rest (IASR)"/>
+  <ListItems  Value="IPSO" Text="Plant sls off (IPSO)"/>
+  <ListItems  Value="ISCS" Text="I and S-Central and South (ISCS)"/>
+  <ListItems  Value="ISWN" Text="I and S-West and North (ISWN)"/>
+  <ListItems  Value="JAMS" Text="VP/Branch Head Approval Needed-B (JAMS)"/>
+  <ListItems  Value="KAT" Text="Katni (KAT)"/>
+  <ListItems  Value="MDS" Text="Madras (MDS)"/>
+  <ListItems  Value="NGP" Text="Nagpur (NGP)"/>
+  <ListItems  Value="PUNE" Text="Pune-Sales-Foundry (PUNE)"/>
+  <ListItems  Value="SWSO" Text="Sister-works sales (SWSO)"/>
+</ListItems>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    
+
+                 
+                        
+                                                                                                   
+           
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+                                           
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true" android:tag="layout/item_rv_intent_material_0">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8">
+
+
+            <TextView
+                android:id="@+id/lbl_materialName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_4"
+                android:fontFamily="@font/open_sans"
+                android:text="Material Name:"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_materialName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_4"
+                android:layout_toEndOf="@id/lbl_materialName"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:lines="1"
+                android:maxLines="1"
+                android:tag="binding_1"                   
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_materialName"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_4"
+                android:layout_toStartOf="@+id/lbl_kg_tag"
+
+                android:drawablePadding="@dimen/margin_4"
+                android:fontFamily="@font/open_sans"
+                android:text="23456"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lbl_kg_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_materialName"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:drawablePadding="@dimen/margin_4"
+                android:fontFamily="@font/open_sans"
+                android:text="kg"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/lbl_material_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_materialName"
+                android:layout_margin="@dimen/margin_4"
+
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:text="Material Code:"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_material_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_materialName"
+                android:layout_alignBaseline="@+id/lbl_material_code"
+                android:layout_margin="@dimen/margin_4"
+
+                android:layout_toEndOf="@+id/lbl_material_code"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:tag="binding_2"                  
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbl_product_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_material_code"
+                android:layout_margin="@dimen/margin_4"
+
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:text="Product Remark:"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lbl_material_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_material_code"
+                android:layout_margin="@dimen/margin_4"
+                android:layout_toEndOf="@+id/lbl_product_remark"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:lines="1"
+                android:maxLines="1"
+                android:tag="binding_3"                     
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_material_remark"
+                android:layout_margin="10dp"
+               >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lbl_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+                            android:paddingBottom="@dimen/margin_8"
+
+                            android:text="Quantity"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/lbl_plant_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+                            android:paddingBottom="@dimen/margin_8"
+                            android:text="Plant Code"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/lbl_units"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+
+                            android:paddingBottom="@dimen/margin_8"
+                            android:text="Unit"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/lbl_price_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+                            android:paddingBottom="@dimen/margin_8"
+                            android:text="Total Price"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+
+                            android:paddingBottom="@dimen/margin_8"
+
+
+                            android:tag="binding_4"               
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_plant_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+                            android:paddingBottom="@dimen/margin_8"
+                            android:tag="binding_5"                
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_units"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+                            android:paddingEnd="@dimen/margin_8"
+
+                            android:paddingBottom="@dimen/margin_8"
+
+                            android:tag="binding_6"            
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_price_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cust_txt"
+
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/margin_8"
+                            android:paddingTop="@dimen/margin_8"
+
+                            android:paddingEnd="@dimen/margin_8"
+                            android:paddingBottom="@dimen/margin_8"
+                            android:tag="binding_7"                 
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+
+                    </TableRow>
+                </TableLayout>
+
+
+                <!--<View-->
+                <!--android:id="@+id/view"-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@color/colorBlack" />-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/view">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="14dp"-->
+                <!--android:layout_height="14dp"-->
+                <!--app:srcCompat="@drawable/ic_rupee"-->
+                <!--android:layout_toStartOf="@+id/txt_price_unit"-->
+                <!--android:layout_marginTop="@dimen/margin_4" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_price_unit"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/open_sans"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="1234556"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:textSize="@dimen/txt_14"-->
+                <!--android:textStyle="normal" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/lbl_price_unit"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_price_unit"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:fontFamily="@font/open_sans"-->
+                <!--android:layout_marginTop="@dimen/margin_4"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Price Per Unit"-->
+                <!--android:textColor="@color/colorGray"-->
+                <!--android:textSize="@dimen/_8sdp"-->
+                <!--android:textStyle="normal" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toStartOf="@+id/view">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="14dp"-->
+                <!--android:layout_height="14dp"-->
+                <!--app:srcCompat="@drawable/ic_rupee"-->
+                <!--android:layout_toStartOf="@+id/txt_total_price"-->
+                <!--android:layout_marginTop="@dimen/margin_4" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_total_price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/open_sans"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="1234556"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:textSize="@dimen/txt_14"-->
+                <!--android:textStyle="normal" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/lbl_total_price"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_total_price"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="@dimen/margin_4"-->
+                <!--android:fontFamily="@font/open_sans"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Total Price"-->
+                <!--android:textColor="@color/colorGray"-->
+                <!--android:textSize="@dimen/_8sdp"-->
+                <!--android:textStyle="normal" />-->
+
+                <!--</RelativeLayout>-->
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+         

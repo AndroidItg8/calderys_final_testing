@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="Y" Text="No Approval Needed (Y)"/>
+  <ListItems  Value="M" Text="MD Approval Needed (M)"/>
+   <ListItems  Value="P" Text="President Approval Needed (P)"/>
+  <ListItems  Value="B" Text="VP/Branch Head Approval Needed (B)"/>
+</ListItems>

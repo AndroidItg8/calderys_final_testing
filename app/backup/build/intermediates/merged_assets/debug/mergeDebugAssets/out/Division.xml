@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="DV" Text="Dev.Goods-From RCD (DV) "/>
+  <ListItems  Value="PS" Text="Project Services (PS)" />
+  <ListItems  Value="SH" Text="Shaped Items (SH)"/>
+  <ListItems  Value="SY" Text="Synthetic Items (SY)" />
+  <ListItems  Value="TG" Text="Trading Goods (TG)"/>
+  <ListItems  Value="US" Text="Unshaped Items (US) "/>
+  </ListItems>

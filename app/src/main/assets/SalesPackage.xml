@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="ZONLY_PROD" Text="Only Product (ZONLY_PROD)"/>
+  <ListItems  Value="ZPROD_SERV" Text="Products and Services (ZPROD_SERV)"/>
+</ListItems>

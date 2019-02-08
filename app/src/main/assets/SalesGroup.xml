@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="001" Text="Sales Group 1 (001)"/>
+  <ListItems  Value="EXP" Text="Export (EXP)"/>
+   <ListItems  Value="FGS" Text="Finished Goods Sales (FGS)"/>
+  <ListItems  Value="SRV" Text="Services (SRV)"/>
+  <ListItems  Value="TGS" Text="Trading Goods Sales (TGS)"/>
+</ListItems>

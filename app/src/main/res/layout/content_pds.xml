@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_16"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".caldConnect.pds.PDSActivity"
+    tools:showIn="@layout/activity_pds">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lbl_pds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_margin="@dimen/margin_16"
+        android:text="PDS Details"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/_10sdp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_pds"
+        android:layout_margin="@dimen/margin_16"
+        android:padding="@dimen/margin_8"
+        android:textColorHint="@color/colorGrayLight"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtProductTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center_vertical"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <com.itg.calderysapp.widget.SearchableSpinner
+        android:id="@+id/SearchableSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        app:KeepLastSearch="true"
+        app:RevealViewBackgroundColor="@color/colorWhite_400"
+        app:SearchViewTextColor="@color/colorGray"
+        app:StartSearchTintColor="@color/colorBlack"
+        app:SearchViewBackgroundColor="@color/colorGrayLight"
+        app:RevealEmptyText="Touch to select"
+        app:BordersSize="1px"
+        app:ItemsDivider="@color/colorGrayLight"
+        app:BoarderColor="@color/colorPrimary"
+        app:ShowBorders="true"
+        app:DividerHeight="1px" />
+
+
+    <com.itg.calderysapp.widget.SearchableSpinner
+        android:id="@+id/SearchableSpinnerFamilyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        app:KeepLastSearch="true"
+        app:RevealViewBackgroundColor="@color/colorWhite_400"
+        app:SearchViewTextColor="@color/colorBlack"
+        app:StartSearchTintColor="@color/colorBlack"
+        app:SearchViewBackgroundColor="@color/colorGrayLights"
+        app:RevealEmptyText="Select List"
+        app:BordersSize="1px"
+        app:ItemsDivider="@color/colorGrayLight"
+        app:BoarderColor="@color/colorPrimary"
+        app:ShowBorders="true"
+        app:DividerHeight="1px"
+        />
+
+    <com.itg.calderysapp.widget.MaterialBetterSpinner
+        android:id="@+id/spinnerFileType"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchableSpinner"
+        android:hint="Select File Type"
+        android:padding="@dimen/margin_8" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_16">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:fontFamily="@font/open_sans"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>
+</ScrollView>

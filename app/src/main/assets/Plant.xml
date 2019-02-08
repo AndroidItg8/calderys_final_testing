@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListItems>
+  <ListItems  Value="" Text="--"/>
+  <ListItems  Value="FR09" Text="FRAN-Allied (fr09)"/>
+  <ListItems  Value="FR08" Text="FRAN-B.R.Chem (fr08)"/>
+  <ListItems  Value="FR06" Text="FRAN-HRIW (fr06)"/>
+  <ListItems  Value="CM14" Text="FRAN-KMPL (cm14)"/>
+  <ListItems  Value="CM13" Text="FRAN-Prefect ins (cm13)"/>
+  <ListItems  Value="CM04" Text="FRAN-Premier (cm04)"/>
+  <ListItems  Value="FR15" Text="FRAN-Raghuvansh (fr15)"/>
+  <ListItems  Value="CM11" Text="FRAN-Sharda (cm11)"/>
+  <ListItems  Value="KRW" Text="KRW (krw)"/>
+  <ListItems  Value="NRW" Text="NRW (nrw)"/>
+  <ListItems  Value="WHMU" Text="WH-Mumbhai (whmu)" />
+  <ListItems  Value="WHJH" Text="WH-JAMS (WHJH)" />
+
+</ListItems>

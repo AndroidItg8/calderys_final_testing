@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/margin_8"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_8">
+
+
+        <TextView
+            android:id="@+id/txt_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:autoLink="all"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:layout_below="@+id/txt_date"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="3 Caldemitras have joined recently"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_14"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:fontFamily="@font/open_sans"
+            android:text="09-Sep-2018"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGray"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.card.MaterialCardView>
