@@ -508,6 +508,14 @@ public class CreateIntentActivity extends AppCompatActivity implements View.OnCl
     }
 
     @Override
+    public void onEqpAvail(List<SpinnerGenericModel> models) {
+//        do i change here
+
+
+
+    }
+
+    @Override
     public void onSuccess(String message, String status) {
 
     }

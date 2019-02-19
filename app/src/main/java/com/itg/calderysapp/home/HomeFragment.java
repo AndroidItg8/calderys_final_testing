@@ -24,6 +24,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.itg.calderysapp.R;
 import com.itg.calderysapp.caldConnect.gallery.GalleryDetailsActivity;
 import com.itg.calderysapp.caldConnect.gallery.GalleryFragment;
@@ -32,6 +33,7 @@ import com.itg.calderysapp.caldConnect.pds.model.Data;
 import com.itg.calderysapp.caldConnect.update.UpdateDetailFragment;
 import com.itg.calderysapp.caldConnect.update.UpdateFragment;
 import com.itg.calderysapp.caldConnect.update.model.Datum;
+import com.itg.calderysapp.caldNet.newIndent.intent.model.IndentModel;
 import com.itg.calderysapp.common.CommonInterface;
 import com.itg.calderysapp.common.CommonMethod;
 import com.itg.calderysapp.common.UtilSnackbar;
@@ -156,11 +158,7 @@ public class HomeFragment extends Fragment implements ViewPagerAdapter.ImageClic
         if (getArguments() != null) {
             message = getArguments().getParcelable(ARG_PARAM3);
         }
-        try {
-            checkIntent();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+
 
     }
 
@@ -172,6 +170,11 @@ public class HomeFragment extends Fragment implements ViewPagerAdapter.ImageClic
         unbinder = ButterKnife.bind(this, view);
         isViewEnable = true;
         setSwipeRefresh();
+        try {
+            checkIntent();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         initViewAll();
         return view;
@@ -194,13 +197,11 @@ public class HomeFragment extends Fragment implements ViewPagerAdapter.ImageClic
     }
 
     private void checkIntent() throws JSONException {
-
         if (message != null) {
             if (message.getCondition().getData() != null) {
                 if (message.getCondition().getData().contains("title")) {
-                    JSONObject jsonObject = new JSONObject(message.getCondition().getData());
-                    if (jsonObject.has("type")) {
-                        int type = jsonObject.getInt("type");
+                    if (message.getCondition().getClasstype()>0) {
+                        int type = message.getCondition().getClasstype();
                         if (type == CommonMethod.GALLERY_ITEM) {
                             ((HomeActivity) getActivity()).setNavigationSelected(0);
                             if (fm == null)

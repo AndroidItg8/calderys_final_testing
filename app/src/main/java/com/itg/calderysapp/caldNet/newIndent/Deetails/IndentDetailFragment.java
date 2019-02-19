@@ -352,6 +352,7 @@ public class IndentDetailFragment extends Fragment implements MaterialIntentAdap
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 SpinnerGenericModel model= (SpinnerGenericModel) view.getTag();
+                IndentDetailFragment.this.model.setProcessCode(model.getId());
                 presenter.downloadEqpCode(model.getId());
             }
 
@@ -371,9 +372,9 @@ public class IndentDetailFragment extends Fragment implements MaterialIntentAdap
     private void parseXMlLForSpinner() {
         Spinner[] allSpinners = new Spinner[]{soTypeSpinner, salesSpinner, usagaSpinner,
                 processCodeSpinner, splProcessIndicatorSpinner,
-                equipmentSpinner, salesGroupSpinner, salesPackageSpinner};
+                 salesGroupSpinner, salesPackageSpinner};
         String[] allXmlFileName = new String[]{SOTYPE, SALESOFFICES, USAGEINDICATOR, PROCESSCODE,
-                SPECIALPROCESSINDICATORS, EQUIPMENTCODE, SALESGROUP, SALESPACKAGE};
+                SPECIALPROCESSINDICATORS, SALESGROUP, SALESPACKAGE};
         setAllSpinnerToXMl(allSpinners, allXmlFileName);
 
     }
@@ -865,6 +866,13 @@ public class IndentDetailFragment extends Fragment implements MaterialIntentAdap
 
         Log.d(TAG, "onClick: Model" + new Gson().toJson(model));
 
+
+    }
+
+    @Override
+    public void onEqpAvail(List<SpinnerGenericModel> models) {
+        genericSpinnerAdapter = new GenericSpinnerAdapter(getActivity(), models);
+        equipmentSpinner.setAdapter(genericSpinnerAdapter);
 
     }
 

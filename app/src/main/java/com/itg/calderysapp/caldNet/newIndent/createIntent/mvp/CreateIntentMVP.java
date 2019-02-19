@@ -6,10 +6,13 @@ import android.view.View;
 
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.Indents;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.IntentDetailModel;
+import com.itg.calderysapp.caldNet.newIndent.createIntent.model.SpinnerGenericModel;
 import com.itg.calderysapp.caldNet.newIndent.intent.model.PaginationModel;
 import com.itg.calderysapp.caldNet.newIndent.intent.model.ViewDraftModel;
 import com.itg.calderysapp.common.BaseView;
 import com.itg.calderysapp.common.CommonListener;
+
+import java.util.List;
 
 public interface CreateIntentMVP {
 
@@ -41,6 +44,8 @@ public interface CreateIntentMVP {
         void showSnackbar(String model);
 
         void setSAPModel(IntentDetailModel model);
+
+        void onEqpAvail(List<SpinnerGenericModel> models);
     }
 
          public  interface  CreateIntentPresenter{
@@ -86,7 +91,7 @@ public interface CreateIntentMVP {
 
       void onDeleteIndent(IntentDetailModel indentModel, CommonListener.CreateIntentListener listener);
 
-      void downloadEqpCode(String id);
+      void downloadEqpCode(String id,EqpDataListener listener);
   }
 
 

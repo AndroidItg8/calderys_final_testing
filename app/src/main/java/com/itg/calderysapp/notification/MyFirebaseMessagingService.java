@@ -111,24 +111,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
     }
 
-    private void sendNotification(Message body, String title) {
-//
-
-//
-//        Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-//        final Notification.Builder notificationBuilder = new Notification.Builder(this);
-//        final int id = 0;
-//        Bitmap placeHolder = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
-//        notificationBuilder
-//                .setSmallIcon(R.mipmap.ic_launcher)
-//                .setContentTitle(title)
-//                .setContentText("ss")
-//                .setAutoCancel(true)
-//                .setSound(defaultSoundUri)
-//                .setContentIntent(pendingIntent)
-//                .setStyle(new Notification.BigPictureStyle());
-
-    }
 
     public void showStandardNotification(Context context, Message message1) {
         Intent intent = new Intent(this, HomeActivity.class);
@@ -141,10 +123,90 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     }
 
 
-    //       createNotificationBuider(context,
-//                message1, pendingIntent);
-//        showNotification(context, notification.build(), 0, message1);
-//        showNotiication(context, message1, pendingIntent);
+
+
+  public   void showNotiication(Context mContext, Message message) {
+
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(mContext.getApplicationContext(), "notify_001");
+        Intent ii = new Intent(mContext.getApplicationContext(), HomeActivity.class);
+//        ii.putExtra(CommonMethod.FROM_NOTIFICATION, message);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 0, ii, 0);
+
+        NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
+        bigText.setBigContentTitle(message.getCondition().getTitle());
+        bigText.setSummaryText(message.getCondition().getMessage());
+
+        mBuilder.setContentIntent(pendingIntent);
+        mBuilder.setSmallIcon(R.mipmap.ic_launcher_round);
+        mBuilder.setContentTitle(message.getCondition().getTitle());
+        mBuilder.setContentText(message.getCondition().getMessage());
+        mBuilder.setPriority(Notification.PRIORITY_MAX);
+        mBuilder.setStyle(bigText);
+        mBuilder.setAutoCancel(true);
+
+        mNotificationManager =
+                (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel("notify_001",
+                    "Channel human readable title",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            mNotificationManager.createNotificationChannel(channel);
+        }
+
+        mNotificationManager.notify(0, mBuilder.build());
+    }
+
+    private void showNotiication(Context mContext, Message message, PendingIntent pendingIntent) {
+
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(mContext.getApplicationContext(), MY_CHANNEL_ID_01);
+        Intent ii = new Intent(mContext.getApplicationContext(), HomeActivity.class);
+
+        NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
+        bigText.setBigContentTitle(message.getCondition().getTitle());
+        bigText.setSummaryText(message.getCondition().getMessage());
+
+        mBuilder.setContentIntent(pendingIntent);
+        mBuilder.setSmallIcon(R.mipmap.ic_launcher_round);
+        mBuilder.setContentTitle(message.getCondition().getTitle());
+        mBuilder.setContentText(message.getCondition().getMessage());
+        mBuilder.setPriority(Notification.PRIORITY_MAX);
+        mBuilder.setStyle(bigText);
+
+        mNotificationManager =
+                (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(MY_CHANNEL_ID_01,
+                    "Channel human readable title",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            mNotificationManager.createNotificationChannel(channel);
+        }
+
+        mNotificationManager.notify(0, mBuilder.build());
+    }
+
+    private void showNotification(Context context, Notification notification, int id, Message message1) {
+
+
+        mNotificationManager =
+                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(MY_CHANNEL_ID_01,
+                    "Channel human readable title",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            mNotificationManager.createNotificationChannel(channel);
+        }
+
+        mNotificationManager.notify(id, notification);
+    }
 
     public NotificationCompat.Builder createNotificationBuider(Context context,
                                                                Message message, PendingIntent pendingIntent) {
@@ -198,86 +260,29 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
 //        }
     }
+    private void sendNotification(Message body, String title) {
+//
 
-    private void showNotification(Context context, Notification notification, int id, Message message1) {
-
-
-        mNotificationManager =
-                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(MY_CHANNEL_ID_01,
-                    "Channel human readable title",
-                    NotificationManager.IMPORTANCE_DEFAULT);
-            mNotificationManager.createNotificationChannel(channel);
-        }
-
-        mNotificationManager.notify(id, notification);
-    }
-
-    private void showNotiication(Context mContext, Message message, PendingIntent pendingIntent) {
-
-        NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(mContext.getApplicationContext(), MY_CHANNEL_ID_01);
-        Intent ii = new Intent(mContext.getApplicationContext(), HomeActivity.class);
-
-        NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
-        bigText.setBigContentTitle(message.getCondition().getTitle());
-        bigText.setSummaryText(message.getCondition().getMessage());
-
-        mBuilder.setContentIntent(pendingIntent);
-        mBuilder.setSmallIcon(R.mipmap.ic_launcher_round);
-        mBuilder.setContentTitle(message.getCondition().getTitle());
-        mBuilder.setContentText(message.getCondition().getMessage());
-        mBuilder.setPriority(Notification.PRIORITY_MAX);
-        mBuilder.setStyle(bigText);
-
-        mNotificationManager =
-                (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+//
+//        Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+//        final Notification.Builder notificationBuilder = new Notification.Builder(this);
+//        final int id = 0;
+//        Bitmap placeHolder = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+//        notificationBuilder
+//                .setSmallIcon(R.mipmap.ic_launcher)
+//                .setContentTitle(title)
+//                .setContentText("ss")
+//                .setAutoCancel(true)
+//                .setSound(defaultSoundUri)
+//                .setContentIntent(pendingIntent)
+//                .setStyle(new Notification.BigPictureStyle());
 
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(MY_CHANNEL_ID_01,
-                    "Channel human readable title",
-                    NotificationManager.IMPORTANCE_DEFAULT);
-            mNotificationManager.createNotificationChannel(channel);
-        }
+        //       createNotificationBuider(context,
+//                message1, pendingIntent);
+//        showNotification(context, notification.build(), 0, message1);
+//        showNotiication(context, message1, pendingIntent);
 
-        mNotificationManager.notify(0, mBuilder.build());
-    }
-
-    void showNotiication(Context mContext, Message message) {
-
-        NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(mContext.getApplicationContext(), "notify_001");
-        Intent ii = new Intent(mContext.getApplicationContext(), HomeActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 0, ii, 0);
-
-        NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
-        bigText.setBigContentTitle(message.getCondition().getTitle());
-        bigText.setSummaryText(message.getCondition().getMessage());
-
-        mBuilder.setContentIntent(pendingIntent);
-        mBuilder.setSmallIcon(R.mipmap.ic_launcher_round);
-        mBuilder.setContentTitle(message.getCondition().getTitle());
-        mBuilder.setContentText(message.getCondition().getMessage());
-        mBuilder.setPriority(Notification.PRIORITY_MAX);
-        mBuilder.setStyle(bigText);
-        mBuilder.setAutoCancel(true);
-
-        mNotificationManager =
-                (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
-
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel("notify_001",
-                    "Channel human readable title",
-                    NotificationManager.IMPORTANCE_DEFAULT);
-            mNotificationManager.createNotificationChannel(channel);
-        }
-
-        mNotificationManager.notify(0, mBuilder.build());
     }
 
 

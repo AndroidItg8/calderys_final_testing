@@ -17,6 +17,7 @@ import com.itg.calderysapp.caldConnect.update.model.Datum;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.IndentController;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.Indents;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.IntentDetailModel;
+import com.itg.calderysapp.caldNet.newIndent.Deetails.model.ProcessCodeController;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.sa_model.SAPModel;
 import com.itg.calderysapp.caldNet.newIndent.addmaterial.model.MaterialModel;
 import com.itg.calderysapp.caldNet.newIndent.addmaterial.model.SaveMaterialModel;
@@ -50,6 +51,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -2730,8 +2732,13 @@ return disposable;
         return responseBodyObservable.flatMap(new Function<ResponseBody, Observable<List<SpinnerGenericModel>>>() {
             @Override
             public Observable<List<SpinnerGenericModel>> apply(ResponseBody responseBody) throws Exception {
+                String res=responseBody.string();
+                if(TextUtils.isEmpty(res)) {
+                    return Observable.error(new Throwable());
+                }
+                    ProcessCodeController controller=new ProcessCodeController(res);
+                    return Observable.just(controller.getProcessCode());
 
-                return null;
             }
         }).subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

@@ -10,6 +10,7 @@ import com.google.gson.Gson;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.Indents;
 import com.itg.calderysapp.R;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.IntentDetailModel;
+import com.itg.calderysapp.caldNet.newIndent.createIntent.model.SpinnerGenericModel;
 import com.itg.calderysapp.caldNet.newIndent.intent.model.IndentModel;
 import com.itg.calderysapp.caldNet.newIndent.intent.model.PaginationModel;
 
@@ -68,7 +69,14 @@ public class CreateIntentPresenterImp extends BaseWeakPresenter<CreateIntentMVP.
     @Override
     public void downloadEqpCode(String id) {
         if(hasView()){
-            module.downloadEqpCode(id);
+            module.downloadEqpCode(id, new EqpDataListener() {
+                @Override
+                public void onEqpDataAvail(List<SpinnerGenericModel> models) {
+                    if(hasView()){
+                        getView().onEqpAvail(models);
+                    }
+                }
+            });
         }
     }
 
@@ -152,6 +160,8 @@ public class CreateIntentPresenterImp extends BaseWeakPresenter<CreateIntentMVP.
             module.onDeleteIndent(indentModel, this);
         }
     }
+
+
 
     @Override
     public void setViewAllAvailable(CreateIntentMVP.CreatIntentView view) {

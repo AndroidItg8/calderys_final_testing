@@ -8,10 +8,13 @@ package com.itg.calderysapp.caldNet.newIndent.createIntent.mvp;
 
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.Indents;
 import com.itg.calderysapp.caldNet.newIndent.Deetails.model.IntentDetailModel;
+import com.itg.calderysapp.caldNet.newIndent.createIntent.model.SpinnerGenericModel;
 import com.itg.calderysapp.caldNet.newIndent.intent.model.PaginationModel;
 import com.itg.calderysapp.caldNet.newIndent.intent.model.ViewDraftModel;
 import com.itg.calderysapp.common.CommonListener;
 import com.itg.calderysapp.common.NetworkUtility;
+
+import java.util.List;
 
 import io.reactivex.disposables.Disposable;
 
@@ -130,11 +133,13 @@ public class CreateIntentModuleImp implements CreateIntentMVP.CreateIntentModule
     }
 
     @Override
-    public void downloadEqpCode(String id) {
+    public void downloadEqpCode(String id,EqpDataListener listener) {
         Disposable disposable=new NetworkUtility.NetworkBuilder().build().downloadEqp(id, new NetworkUtility.ResponseListener() {
             @Override
             public void onSuccess(Object message) {
-
+                if(message!=null){
+                    listener.onEqpDataAvail((List<SpinnerGenericModel>)message);
+                }
             }
 
             @Override
